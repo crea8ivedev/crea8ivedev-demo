@@ -73,8 +73,8 @@ const WhyRevvit = () => {
         >
           {whyRevvitData.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="slider-contant duration-300 delay-150 ease-linear flex flex-col lg:flex-row">
-                <div className="slider-contant-heding w-full lg:w-6/12 xl:w-5/12">
+              <div className="slider-content duration-300 delay-150 ease-linear flex flex-col lg:flex-row">
+                <div className="slider-content-heding w-full lg:w-6/12 xl:w-5/12">
                   <h2>
                     <Image
                       src="/assets/slash-icons/red.png"
@@ -82,7 +82,7 @@ const WhyRevvit = () => {
                       height={0}
                       width={0}
                       sizes="100vw"
-                      className="slider-contant-heding-img-1"
+                      className="slider-content-heding-img-1"
                     />
                     <Image
                       src="/assets/slash-icons/black.png"
@@ -90,16 +90,16 @@ const WhyRevvit = () => {
                       height={0}
                       width={0}
                       sizes="100vw"
-                      className="slider-contant-heding-img-2"
+                      className="slider-content-heding-img-2"
                     />
-                    <div className="slider-contant-spacing">
+                    <div className="slider-content-spacing">
                       {item.heading}
                       <span className="text-primary break-normal pl-1 lg:pl-2">
                         {item.heading2}
                       </span>
                     </div>
                   </h2>
-                  <p className="slider-contant-spacing">{item.description}</p>
+                  <p className="slider-content-spacing">{item.description}</p>
                 </div>
                 <div className="w-full lg:w-6/12 xl:w-7/12">
                   <Image

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 import FeaturesIcon from "@/components/FeaturesIcon";
 
@@ -7,9 +8,12 @@ const Features = () => {
     <div id="features" className="features-root">
       <div className="main-container-root">
         <div className="features-title-section">
-          <img
+          <Image
             src="/assets/icons/revvit-icon.png"
             alt="title-icon"
+            width={0}
+            height={0}
+            sizes="100vw"
             className="title--image"
           />
           <h2 className="title-text">
@@ -26,8 +30,8 @@ const Features = () => {
                 className="features-img"
               />
             </div>
-            <div className="features-contant-section">
-              <div className="features-contant-wraper">
+            <div className="features-content-section">
+              <div className="features-content-wraper">
                 <FeatureBox
                   title="Robust Search Functionality"
                   description="Strong search functionality feature helps save time and removes the need for pre-searching before making transactions."
@@ -37,7 +41,7 @@ const Features = () => {
                   description="Users are notified in real-time about new or modified listings. Sellers can also get real-time notifications on new messages from potential buyers."
                 />
               </div>
-              <div className="features-contant-wraper">
+              <div className="features-content-wraper">
                 <FeatureBox
                   title="User Profiles"
                   description="Buyers and sellers can create customizable profiles, upload photos, and detail their interests and preferences. Potential buyers can review sellers' feedback and ratings, making it easier to assess them."
@@ -47,7 +51,7 @@ const Features = () => {
                   description="In-app messaging functionality allows efficient communication between both parties, and it often reduces the time taken to communicate back and forth to finalize the terms of transactions."
                 />
               </div>
-              <div className="features-contant-wraper">
+              <div className="features-content-wraper">
                 <FeatureBox
                   title="Geolocation Features"
                   description="These features let users view sellers or buyer's location on the map and enable search results based on geographical proximity."
@@ -68,7 +72,7 @@ const Features = () => {
 export default Features;
 
 const FeatureBox = ({ title, description }) => (
-  <div className="features-contant-box">
+  <div className="features-content-box">
     <h4 className="features-title">
       <FeaturesIcon />
       {title}

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
@@ -22,9 +23,12 @@ const Footer = () => {
         <div className="main-container-root">
           <div className="footer-list-root">
             <div className="footer-list-section">
-              <img
+              <Image
                 src="/assets/logo/revvit-logo-white-v2.png"
                 alt="image"
+                width={0}
+                height={0}
+                sizes="100vw"
                 className="footer-list-section-img"
               />
               <ul className="footer-list-first">
@@ -56,9 +60,12 @@ const Footer = () => {
               </div>
             </div>
             <div className="footer-list-section-two">
-              <img
+              <Image
                 src="/assets/images/footer_car.png"
                 alt="image"
+                width={0}
+                height={0}
+                sizes="100vw"
                 className="footer-list-section-two-img w-full h-full"
               />
               <div className="social-icon-section">

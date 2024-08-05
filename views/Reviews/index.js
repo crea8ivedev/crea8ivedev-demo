@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination } from "swiper/modules";
 
@@ -13,9 +14,12 @@ const Reviews = () => {
     <div id="reviews" className="features-root">
       <div className="main-container-root">
         <div className="features-title-section">
-          <img
+          <Image
             src="/assets/icons/revvit-icon.png"
             alt="Logo"
+            width={0}
+            height={0}
+            sizes="100vw"
             className="title--image"
           />
           <h2 className="title-text">Reviews</h2>
