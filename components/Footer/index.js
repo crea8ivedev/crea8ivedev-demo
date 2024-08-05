@@ -1,8 +1,21 @@
+"use client";
+
 import React from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   const currentYear = new Date();
+
+  const scrollToSection = (event) => {
+    event.preventDefault();
+    const targetId = event.currentTarget.getAttribute("href").slice(1);
+    const targetElement = document?.getElementById(targetId);
+    const yOffset = -30;
+    const y =
+      targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  };
+
   return (
     <div>
       <div className="footer-root">
@@ -15,11 +28,18 @@ const Footer = () => {
                 className="footer-list-section-img"
               />
               <ul className="footer-list-first">
-                <li>REVVIT</li>
-                <li>BUYERS</li>
-                <li>SELLERS</li>
-                <li>LOCATIONS</li>
-                <li>PRICING</li>
+                <a href="#why-revvit" onClick={scrollToSection}>
+                  WHY REVVIT
+                </a>
+                <a href="#features" onClick={scrollToSection}>
+                  FEATURES
+                </a>
+                <a href="#buy-sell" onClick={scrollToSection}>
+                  BUYERS-SELLERS
+                </a>
+                <a href="#reviews" onClick={scrollToSection}>
+                  REVIEWS
+                </a>
               </ul>
               <div className="break-line" />
               <div className="footer-privacy">

@@ -4,7 +4,7 @@ import FeaturesIcon from "@/components/FeaturesIcon";
 
 const Features = () => {
   return (
-    <div className="features-root">
+    <div id="features" className="features-root">
       <div className="main-container-root">
         <div className="features-title-section">
           <img

@@ -64,7 +64,7 @@ const WhyRevvit = () => {
 
   return (
     <Fragment>
-      <div className="main-container-root slider-selection">
+      <div id="why-revvit" className="main-container-root slider-selection">
         <Swiper
           pagination={pagination}
           modules={[Pagination]}

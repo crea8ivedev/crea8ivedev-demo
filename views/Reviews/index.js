@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 const Reviews = () => {
   const slides = 9;
   return (
-    <div className="features-root">
+    <div id="reviews" className="features-root">
       <div className="main-container-root">
         <div className="features-title-section">
           <img

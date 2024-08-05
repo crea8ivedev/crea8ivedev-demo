@@ -8,6 +8,25 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaSearch } from "react-icons/fa";
 
 import HeaderIcon from "./sub-components/HeaderIcon";
 
+const headerList = [
+  {
+    title: "WHY REVVIT",
+    href: "#why-revvit",
+  },
+  {
+    title: "FEATURES",
+    href: "#features",
+  },
+  {
+    title: "BUYERS-SELLERS",
+    href: "#buy-sell",
+  },
+  {
+    title: "REVIEWS",
+    href: "#reviews",
+  },
+];
+
 const Header = () => {
   const params = useParams();
 
@@ -54,6 +73,18 @@ const Header = () => {
     if (window.innerWidth < 1024) {
       setScrolling(true);
     }
+  };
+
+  const scrollToSection = (event) => {
+    event.preventDefault();
+    const targetId = event.currentTarget.getAttribute("href").slice(1);
+    const targetElement = document?.getElementById(targetId);
+    const yOffset = -30;
+    const y =
+      targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+
+    hanldeMobileCloseHandler();
   };
 
   return (
@@ -153,8 +184,8 @@ const Header = () => {
 
               <div className="primary-header-inner">
                 <ul className="primary-header-nav-list nav-list">
-                  <li>
-                    <Link href="/why-revvit" onClick={hanldeMobileCloseHandler}>
+                  {headerList?.map((item, index) => (
+                    <a href={item.href} key={index} onClick={scrollToSection}>
                       <div
                         className={`nav-list-inner ${
                           activepage.includes("/why-revvit") && "active"
@@ -182,138 +213,10 @@ const Header = () => {
                           activepage.includes("/why-revvit") && "active-link"
                         }`}
                       >
-                        WHY REVVIT
+                        {item.title}
                       </span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/buyers" onClick={hanldeMobileCloseHandler}>
-                      <div
-                        className={`nav-list-inner ${
-                          activepage.includes("/buyers") && "active"
-                        }`}
-                      >
-                        <div className="nav-list-inner-img-root">
-                          <Image
-                            src="/assets/slash-icons/red.png"
-                            alt="Logo"
-                            width={14}
-                            height={19}
-                          />
-                          <Image
-                            src="/assets/slash-icons/black.png"
-                            alt="Logo"
-                            width={12}
-                            height={15}
-                            className="nav-list-inner-img2"
-                          />
-                        </div>
-                      </div>
-                      <span
-                        className={`${
-                          activepage.includes("/buyers") && "active-link"
-                        }`}
-                      >
-                        BUYERS
-                      </span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/sellers" onClick={hanldeMobileCloseHandler}>
-                      <div
-                        className={`nav-list-inner ${
-                          activepage.includes("/sellers") && "active"
-                        }`}
-                      >
-                        <div className="nav-list-inner-img-root ">
-                          <Image
-                            src="/assets/slash-icons/red.png"
-                            alt="Logo"
-                            width={14}
-                            height={19}
-                          />
-                          <Image
-                            src="/assets/slash-icons/black.png"
-                            alt="Logo"
-                            width={12}
-                            height={15}
-                            className="nav-list-inner-img2"
-                          />
-                        </div>
-                      </div>
-                      <span
-                        className={`${
-                          activepage.includes("/sellers") && "active-link"
-                        }`}
-                      >
-                        SELLERS
-                      </span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/locations" onClick={hanldeMobileCloseHandler}>
-                      <div
-                        className={`nav-list-inner ${
-                          activepage.includes("/locations") && "active"
-                        }`}
-                      >
-                        <div className="nav-list-inner-img-root">
-                          <Image
-                            src="/assets/slash-icons/red.png"
-                            alt="Logo"
-                            width={14}
-                            height={19}
-                          />
-                          <Image
-                            src="/assets/slash-icons/black.png"
-                            alt="Logo"
-                            width={12}
-                            height={15}
-                            className="nav-list-inner-img2"
-                          />
-                        </div>
-                      </div>
-                      <span
-                        className={`${
-                          activepage.includes("/locations") && "active-link"
-                        }`}
-                      >
-                        LOCATIONS
-                      </span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/pricing" onClick={hanldeMobileCloseHandler}>
-                      <div
-                        className={`nav-list-inner ${
-                          activepage.includes("/pricing") && "active"
-                        }`}
-                      >
-                        <div className="nav-list-inner-img-root ">
-                          <Image
-                            src="/assets/slash-icons/red.png"
-                            alt="Logo"
-                            width={14}
-                            height={19}
-                          />
-                          <Image
-                            src="/assets/slash-icons/black.png"
-                            alt="Logo"
-                            width={12}
-                            height={15}
-                            className="nav-list-inner-img2"
-                          />
-                        </div>
-                      </div>
-                      <span
-                        className={`${
-                          activepage.includes("/pricing") && "active-link"
-                        }`}
-                      >
-                        PRICING
-                      </span>
-                    </Link>
-                  </li>
+                    </a>
+                  ))}
                 </ul>
               </div>
               <div className="primary-header-login-section flex-between">
