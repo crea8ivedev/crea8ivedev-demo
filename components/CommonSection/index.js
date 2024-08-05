@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
 const CommonSection = ({ children }) => {
-  return <section className="root-section">{children}</section>;
-};
+  return <section className='root-section'>{children}</section>
+}
 
-export default CommonSection;
+export default CommonSection
