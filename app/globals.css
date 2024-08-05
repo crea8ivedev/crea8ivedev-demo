@@ -277,3 +277,54 @@
   @apply lg:w-[500px] xl:w-[550px] lg:ml-auto 2xl:w-[750px] lg:my-0 2xl:ml-[120px];
 }
 /* Why Revvit End */
+
+/* Features Start */
+.features-root {
+  @apply md:py-[100px] py-14 sm:py-20 bg-[#FAF9F5];
+}
+.features-title-section {
+  @apply w-full flex flex-col items-center;
+}
+.title--image {
+  @apply w-12 md:w-20 m-auto h-auto;
+}
+.title-text {
+  @apply text-[30px] md:text-[32px] lg:text-[50px] font-[500] leading-7 lg:leading-[50px] xl:leading-[75px] text-[#333333] mt-[0.5rem];
+}
+
+.features-img-section {
+  @apply max-w-screen-2xl mx-auto mt-10 md:mt-14 lg:mt-20 xl:mt-28 2xl:mt-32;
+}
+.features-img-wraper {
+  @apply grid grid-cols-6 items-center xl:items-start;
+}
+.features-img-card {
+  @apply hidden lg:block col-span-2;
+}
+.features-img {
+  @apply h-auto xl:h-[600px];
+}
+
+.features-contant-section {
+  @apply col-span-12 md:col-span-6 lg:col-span-4 gap-10 sm:gap-12 md:gap-16 xl:gap-16 h-full flex flex-col flex-between;
+}
+.features-contant-wraper {
+  @apply ml-6 mr-6 grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12 md:gap-16 xl:gap-20;
+}
+.features-contant-box {
+  @apply col-span-1;
+}
+.features-title {
+  @apply text-[25px] leading-[30px] sm:text-[26px] sm:leading-[30px] lg:text-[30px] lg:leading-[34px] font-[500] xl:text-[40px] text-[#333333] relative;
+}
+.features-details {
+  @apply text-[16px] leading-[26px] lg:text-[18px] font-[400] lg:leading-[28px] mt-[0.5rem] text-[#797979];
+}
+
+.features-title-img {
+  @apply w-[14px] h-[19px] absolute top-[-15px] left-[-20px];
+}
+.features-title-img-2 {
+  @apply w-[12px] h-[15px] absolute top-[-12px] left-[-13px];
+}
+/* Features End */
