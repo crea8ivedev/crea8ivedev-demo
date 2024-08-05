@@ -328,3 +328,68 @@
   @apply w-[12px] h-[15px] absolute top-[-12px] left-[-13px];
 }
 /* Features End */
+
+/* Buy Sell Start */
+.buy-sell-root-inner {
+  @apply grid grid-cols-1 lg:grid-cols-2;
+}
+.buy-sell-wraper {
+  @apply col-span-12 md:col-span-1 bg-primary px-[30px] lg:px-[40px] xl:px-[50px] 2xl:px-[80px] py-14 sm:py-24;
+}
+.buy-root {
+  @apply flex items-center gap-0 md:gap-10 lg:gap-6 xl:gap-12;
+}
+.buy-main-img {
+  @apply hidden md:block w-[200px] md:h-[600px] lg:h-[700px] xl:h-[800px];
+}
+.buyers-details {
+  @apply flex flex-col items-start mr-0 sm:mr-10 md:mr-20 lg:mr-0;
+}
+.slash-title {
+  @apply flex items-center gap-2 mb-[1rem] md:gap-[1rem] md:mb-[2.5rem];
+}
+.slash-img {
+  @apply w-[20px] h-[30px] md:w-[40px] md:h-[50px];
+}
+.slash-title h2 {
+  @apply text-[30px] md:text-[36px] md:leading-[46px] lg:text-[42px] lg:leading-[52px] xl:text-[52px] font-[500] xl:leading-[58px] text-white;
+}
+.buyers-details ul {
+  @apply flex flex-col gap-[1rem] sm:gap-[1.5rem] md:gap-[2rem] pr-0 lg:pr-[5px] 2xl:pr-[90px] items-start md:text-left;
+}
+.buyers-details li {
+  @apply font-[400] not-italic text-[14px] md:text-[16px] text-[#faf9f5] leading-[25px] md:leading-[28px];
+}
+.buyers-details button {
+  @apply w-[170px] h-[50px] text-[14px] lg:w-[200px] lg:h-[60px] xl:w-[240px] xl:h-[70px] bg-white text-[#333333] rounded-[5px] md:text-[16px] font-[400] leading-[24px] mt-[2rem] md:mt-[3.5rem];
+}
+.buyers-details button:hover {
+  @apply bg-[#333333] text-white;
+}
+
+.sell-root {
+  @apply col-span-12 md:col-span-1 bg-[#333333] px-5 sm:px-8 lg:px-[40px] xl:px-[50px] 2xl:px-[80px] py-14 sm:py-24;
+}
+.sellers-details {
+  @apply flex flex-col items-start md:items-end ml-0 lg:ml-0;
+}
+.sellers-details ul {
+  @apply flex flex-col gap-[1rem] sm:gap-[1.5rem] md:gap-[2rem] pl-0 lg:pl-[5px] 2xl:pl-[90px] items-start md:items-end md:text-right;
+}
+.sellers-details li {
+  @apply font-[400] not-italic text-[14px] md:text-[16px] text-[#faf9f5] leading-[25px] md:leading-[28px];
+}
+.sellers-details button {
+  @apply w-[170px] h-[50px] text-[14px] lg:w-[200px] lg:h-[60px] xl:w-[240px] xl:h-[70px] bg-white text-[#333333] rounded-[5px] md:text-[16px] font-[400] leading-[24px] mt-[2rem] md:mt-[3.5rem];
+}
+.sellers-details button:hover {
+  @apply bg-primary text-white;
+}
+.sell-main-img {
+  @apply hidden md:block w-[200px] md:h-[600px] lg:h-[700px] xl:h-[800px];
+}
+
+.buy-sell-price {
+  @apply text-[30px] md:text-[36px] lg:text-[36px] leading-[50px] lg:leading-[46px] flex items-center gap-2 !important;
+}
+/* Buy Sell End */
