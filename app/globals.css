@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Common CSS Start */
 .flex-center {
   @apply flex justify-center items-center;
 }
@@ -23,6 +24,8 @@
 .swiper-pagination {
   @apply relative mt-[50px] !important;
 }
+
+/* Common CSS End */
 
 /* Header Start */
 .secondary-header {
