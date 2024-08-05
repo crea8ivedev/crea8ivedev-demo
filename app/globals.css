@@ -393,3 +393,32 @@
   @apply text-[30px] md:text-[36px] lg:text-[36px] leading-[50px] lg:leading-[46px] flex items-center gap-2 !important;
 }
 /* Buy Sell End */
+
+/* Reviews Start */
+.reviewCard-main {
+  @apply max-w-screen-2xl mx-auto;
+}
+.keen-slider-slide {
+  @apply px-2 2xl:p-0;
+}
+.reviewCard-wraper {
+  @apply flex items-center;
+}
+
+.review--card {
+  @apply flex flex-col;
+}
+.review--card h6 {
+  @apply text-[18px] font-[700] leading-[26px] text-[#797979] italic;
+}
+.review--card p {
+  @apply text-[16px] font-[400] leading-[24px] text-[#797979] mt-[5px];
+}
+.review--card .break-line {
+  @apply w-full border border-primary my-[1rem];
+}
+.review--card span {
+  @apply text-[14px] font-[500] leading-[21px] text-[#7979790] italic;
+}
+
+/* Reviews End */
