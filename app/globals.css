@@ -420,5 +420,70 @@
 .review--card span {
   @apply text-[14px] font-[500] leading-[21px] text-[#7979790] italic;
 }
-
 /* Reviews End */
+
+/* Footer Start */
+.footer-root {
+  @apply w-full bg-[#333333];
+}
+.footer-list-root {
+  @apply md:flex items-center;
+}
+
+.footer-list-section {
+  @apply w-full lg:max-w-[80%] 2xl:max-w-[50%] flex flex-col items-center lg:items-start pt-[48px] pb-[30px] lg:py-[3rem];
+}
+.footer-list-section-img {
+  @apply w-[160px] h-[45px];
+}
+.footer-list-section li a {
+  @apply text-[16px] font-[400] leading-[24px] text-[#cfcfcf] not-italic hover:text-primary;
+}
+.footer-list-section .break-line {
+  @apply w-full border-b border-primary mt-[2rem];
+}
+
+.footer-list-first {
+  @apply flex flex-col sm:flex-row items-center gap-4 text-white sm:gap-8 lg:gap-6 xl:gap-14 mt-8;
+}
+.footer-list-first .active-link a {
+  @apply text-primary;
+}
+
+.footer-privacy {
+  @apply flex flex-col justify-center lg:justify-start sm:flex-row lg:flex-col xl:flex-row lg:items-start items-center gap-[1rem] mt-[1.5rem] w-full;
+}
+.footer-privacy span {
+  @apply sm:order-1 order-3 text-[12px] font-[400] leading-[18px] not-italic text-[#999999];
+}
+.footer-privacy-devider {
+  @apply hidden md:block lg:hidden xl:block;
+}
+.footer-privacy ul {
+  @apply grid grid-cols-2 sm:flex order-1 sm:order-3 sm:flex-row items-center text-center gap-y-[10px] gap-x-[20px] lg:gap-[1rem] xl:gap-[2rem];
+}
+.footer-privacy li {
+  @apply block leading-[1];
+}
+.footer-privacy li {
+  @apply text-[12px] font-[400] leading-[18px] not-italic text-[#999999];
+}
+
+.footer-list-section-two {
+  @apply w-full max-w-[40%] 2xl:max-w-[50%] h-[320px] py-6 lg:pt-[20px] 2xl:pt-[32px] lg:pb-[12px] xl:pt-[50px] xl:pb-[17px] 2xl:pb-[32px] hidden lg:flex flex-col items-end relative;
+}
+.footer-list-section-two-img {
+  @apply w-full h-full lg:object-contain;
+}
+
+.social-icon-section {
+  @apply flex items-center gap-[10px] 2xl:gap-[1rem] absolute -right-[30px] xl:-right-[20px] bottom-[110px] xl:bottom-[90px] 2xl:bottom-[75px];
+}
+.social-ico-wrater {
+  @apply flex items-center justify-center h-[20px] w-[20px] 2xl:w-[25px] 2xl:h-[25px] border border-white rounded-[50%] hover:bg-primary hover:border-primary;
+}
+.social-icon {
+  @apply text-white h-[10px] w-[10px] 2xl:w-[12px] 2xl:h-[12px];
+}
+
+/* Footer End */
