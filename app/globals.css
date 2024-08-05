@@ -13,6 +13,10 @@
   @apply mt-[67px] lg:mt-[144px];
 }
 
+.main-container-root {
+  @apply px-[30px] md:px-0;
+}
+
 /* Header Start */
 .secondary-header {
   @apply w-full h-[auto] fixed top-[0px] left-0 z-[1001] bg-white transition-transform duration-[800ms] ease-linear border-0 border-b border-[#f2f2f2] py-3 lg:py-6;
@@ -22,10 +26,6 @@
 }
 .secondary-header-main-logo {
   @apply w-[100px] h-[30px];
-}
-
-.main-container-root {
-  @apply px-[30px] md:px-0;
 }
 
 .login-icon-section {
@@ -190,10 +190,6 @@
   @apply border-b-[3px] lg:pt-0 border-solid border-[#f2f2f2] max-md:pb-10;
 }
 
-.main-container-root {
-  @apply px-[30px] md:px-0;
-}
-
 .home-hero-wraper {
   @apply 2xl:mx-auto md:h-full;
 }
@@ -235,3 +231,49 @@
 .hero-wrapper-home-car-img {
   @apply w-full h-full;
 }
+
+/* Why Revvit Start */
+.slider-selection {
+  @apply max-lg:py-[55px] lg:pt-[100px] xl:pt-[150px] relative flex items-center lg:items-end justify-center overflow-hidden m-auto;
+}
+.selectionSlider .swiper-pagination {
+  @apply !flex !justify-center lg:!justify-start !gap-[10px] sm:!gap-[16px] xl:!gap-[30px] 2xl:!bottom-[150px] xl:!left-[90px] !m-0 !static lg:!absolute lg:!bottom-[50px] lg:!left-[100px] !pt-[30px] lg:!pt-0 !w-full lg:!w-max;
+}
+.selectionSlider .swiper-pagination .swiper-pagination-bullet {
+  @apply !m-0;
+}
+.selectionSlider .swiper-slide {
+  @apply transition-all ease-in duration-300;
+}
+
+.selection-ctm-bullet.swiper-pagination-bullet {
+  @apply !opacity-100 !bg-white;
+}
+.selection-ctm-bullet.swiper-pagination-bullet-active {
+  @apply !bg-white !opacity-100;
+}
+.selection-ctm-bullet.swiper-pagination-bullet img {
+  @apply h-[25px] w-[25px] sm:h-[35px] sm:w-[35px] xl:h-[45px] xl:w-[45px];
+}
+
+.slider-contant-heding {
+  @apply relative;
+}
+.slider-contant-heding h2 {
+  @apply text-[25px] md:text-[34px] xl:text-[35px] mb-2 break-all;
+}
+.slider-contant-heding-img-1 {
+  @apply absolute h-[25px] w-[20px] sm:w-[30px] sm:h-[35px] md:w-[45px] md:h-[55px] lg:w-[55px] lg:h-[65px];
+}
+.slider-contant-heding-img-2 {
+  @apply w-[20px] h-[20px] sm:w-[30px] sm:h-[30px] md:w-[45px] md:h-[50px] lg:w-[55px] lg:h-[60px] left-[10px] sm:left-[15px] top-[5px] md:left-[22px] md:top-[5px] lg:left-[29px] lg:top-[5px] absolute;
+}
+
+.slider-contant-spacing {
+  @apply ml-[40px] sm:ml-[55px] md:ml-[100px];
+}
+
+.content-img {
+  @apply lg:w-[500px] xl:w-[550px] lg:ml-auto 2xl:w-[750px] lg:my-0 2xl:ml-[120px];
+}
+/* Why Revvit End */
