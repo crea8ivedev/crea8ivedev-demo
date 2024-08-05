@@ -1,0 +1,237 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.root-section {
+  @apply mt-[67px] lg:mt-[144px];
+}
+
+/* Header Start */
+.secondary-header {
+  @apply w-full h-[auto] fixed top-[0px] left-0 z-[1001] bg-white transition-transform duration-[800ms] ease-linear border-0 border-b border-[#f2f2f2] py-3 lg:py-6;
+}
+.secondary-header-wraper {
+  @apply w-full flex items-center justify-between;
+}
+.secondary-header-main-logo {
+  @apply w-[100px] h-[30px];
+}
+
+.main-container-root {
+  @apply px-[30px] md:px-0;
+}
+
+.login-icon-section {
+  @apply flex items-center gap-[1.5rem];
+}
+.login-icon-section-inner {
+  @apply flex flex-col items-center cursor-pointer;
+}
+.login-icon-section-inner a {
+  @apply flex flex-col items-center;
+}
+.login-icon-section span {
+  @apply text-[12px] font-normal leading-[18px] not-italic text-[#7f7f7f] text-center;
+}
+
+.login-icon-section-inner {
+  @apply flex flex-col items-center cursor-pointer;
+}
+.login-icon-section-inner a {
+  @apply flex flex-col items-center;
+}
+
+.secondary-heade-LoginIcon {
+  @apply w-[23px] h-[23px];
+}
+
+.white-break {
+  @apply h-[42px] border border-[#f2f2f2];
+}
+.handle-menu-root {
+  @apply w-full flex flex-col items-center justify-center cursor-pointer;
+}
+.header-logo-icon {
+  @apply flex items-baseline -mr-[15px];
+}
+.logo-icon-1 {
+  @apply relative left-0;
+}
+.logo-icon-2 {
+  @apply relative left-[-6px];
+}
+.logo-icon-3 {
+  @apply relative left-[-11px] opacity-50;
+}
+
+.primary-header {
+  @apply w-full h-screen p-[20px] md:p-0 bg-white fixed top-0 left-0 z-[800] transition-transform duration-[1000ms] border-0 border-b border-[#f2f2f2] md:h-[unset];
+}
+.primary-header-root {
+  @apply py-6;
+}
+.primary-header-section {
+  @apply gap-10 md:gap-4 lg:gap-3 flex-col md:flex-row;
+}
+.primary-header-logo {
+  @apply w-[140px] md:w-[100px] lg:h-[50px] lg:w-[175px];
+}
+.primary-header-nav-list {
+  @apply flex flex-col md:flex-row items-center justify-between gap-7 md:gap-3 lg:gap-7 xl:gap-12 2xl:gap-16;
+}
+.primary-header-nav-list li a {
+  @apply text-sm;
+}
+.primary-header-nav-list li a:hover .nav-list-inner {
+  @apply flex;
+}
+.primary-header-nav-list .active {
+  @apply flex;
+}
+.primary-header-nav-list .active-link {
+  @apply text-primary;
+}
+.primary-header-login-section {
+  @apply gap-[0.75rem] md:gap-[0.50rem] lg:gap-[0.75rem];
+}
+
+.header-btn {
+  @apply w-[80px] h-[35px] sm:w-[140px] sm:h-[45px] md:w-[86px] md:h-[35px] lg:w-[120px] xl:w-[140px] lg:h-[45px] text-[14px] font-[400] leading-[21px] text-white rounded-[5px];
+}
+.signup-button {
+  @apply bg-primary border border-primary hover:bg-white hover:text-primary;
+}
+.login-button {
+  @apply bg-gray-800 border border-gray-800 hover:bg-white hover:text-gray-800;
+}
+
+/* Banner Start */
+.banner-root {
+  @apply hidden md:block h-[45px] bg-[#e60a54];
+}
+.banner-section {
+  @apply h-[45px] py-0;
+}
+.banner-icon-section {
+  @apply flex items-center gap-[0.75rem];
+}
+.banner-icon-wrapper {
+  @apply w-[16px] h-[16px] text-white cursor-pointer hover:text-gray-800 duration-200 ease-in transition-all;
+}
+.banner-text {
+  @apply text-white text-[12px] font-[400] leading-[18px];
+}
+.banner-text-link {
+  @apply underline;
+}
+.search-section {
+  @apply flex items-center gap-2 text-[10px] font-[400] leading-[15px] text-white;
+}
+.search-section input {
+  @apply bg-transparent placeholder-white uppercase text-xs text-left border-red-100 w-[60px] focus:outline-none focus:text-left;
+}
+.search-section .break {
+  @apply h-[25px] border border-white;
+}
+.search-icon {
+  @apply w-[12px] h-[12px] text-white cursor-pointer;
+}
+/* Banner End */
+
+.close-icon {
+  @apply absolute right-[10px] w-6 h-6 cursor-pointer block md:hidden;
+}
+
+.nav-list li:hover {
+  @apply text-primary;
+}
+
+.nav-list-inner {
+  @apply hidden flex-col items-center mt-[-20px];
+}
+
+.nav-list-inner-img-root {
+  @apply flex items-baseline;
+}
+.nav-list-inner-img1 {
+  @apply w-[14px] h-[19px];
+}
+.nav-list-inner-img2 {
+  @apply ml-[-6px];
+}
+
+.mobile-search {
+  @apply flex items-center justify-between border rounded-[5px] block md:hidden;
+}
+.mobile-search input {
+  @apply rounded-[5px];
+}
+.mobile-search input {
+  @apply placeholder-[#e60a54] focus:outline-none p-[5px];
+}
+.mobile-search svg {
+  @apply h-[15px] w-[15px] mx-2 text-white;
+}
+.mobile-search button {
+  background-color: rgb(230 10 84 / var(--tw-bg-opacity));
+  @apply flex items-center h-auto rounded-e-[5px] p-[5px] text-white justify-center;
+}
+
+/* Header End */
+
+.home-hero-root {
+  @apply border-b-[3px] lg:pt-0 border-solid border-[#f2f2f2] max-md:pb-10;
+}
+
+.main-container-root {
+  @apply px-[30px] md:px-0;
+}
+
+.home-hero-wraper {
+  @apply 2xl:mx-auto md:h-full;
+}
+.home-hero-wraper .swiper-button-next,
+.home-hero-wraper .swiper-button-prev {
+  @apply hidden px-12 md:block !text-gray-400 !top-[50%] -translate-y-[50%] md:!top-[180px] lg:!top-[250px];
+}
+
+.hero_swiper {
+  @apply relative h-full;
+}
+.hero_swiper .swiper-pagination {
+  @apply !mt-[2.5rem] !static !bottom-[30%] sm:!bottom-[40%] md:!hidden;
+}
+.hero-wrapper {
+  @apply h-full flex flex-col max-md:gap-10 max-lg:gap-20 items-center lg:gap-[5vh] text-center justify-between;
+}
+.hero-wrapper-logo {
+  @apply w-14 h-10;
+}
+.hero-title {
+  @apply text-2xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-bold text-primary mt-4;
+}
+.hero-sub-title {
+  @apply text-base my-1 sm:text-2xl lg:text-3xl 2xl:text-[40px] font-bold text-[#5C5C5C];
+}
+.hero-description {
+  @apply text-base font-normal my-2 text-[#888888] max-w-[80%] lg:max-w-[50%];
+}
+.hero-btn {
+  @apply py-4 px-6 bg-primary border border-primary rounded-md flex-center text-sm font-normal text-white mt-4 relative;
+}
+.hero-btn:hover {
+  @apply bg-white text-primary;
+}
+.hero-wrapper-img {
+  @apply sm:w-[300px] lg:w-[600px] lg:h-[200px] md:w-[400px] md:h-[150px] mt-14;
+}
+.hero-wrapper-home-car-img {
+  @apply w-full h-full;
+}
